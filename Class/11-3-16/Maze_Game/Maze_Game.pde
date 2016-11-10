@@ -13,9 +13,10 @@ void draw() {
   background (255);
   image (maze, 10, 10, 580, 580);
   noFill();
+  strokeWeight(1.5); 
   ellipse(x, y, 15, 15);
   //println(x,y);
-  float col1 = get(x+6, y+6);
+  float col1 = get(x+4, y+4);
   println(col1);
   float col2 = get(x-2, y-2);
   println(col2);
@@ -23,19 +24,22 @@ void draw() {
     x = 285;
     y=20;
   }
-}
-
-void keyPressed() {
-  if (key == 'w') {
-    y=y-5;
-  }
-  if (key == 'a') {
-    x=x-5;
-  }
-  if (key == 's') {
-    y=y+5;
-  }
-  if (key == 'd') {
-    x=x+5;
+  if (keyPressed) {
+    if (key == 'w') {
+      y=y-2;
+    }
+    if (key == 'a') {
+      x=x-2;
+    }
+    if (key == 's') {
+      y=y+2;
+    }
+    if (key == 'd') {
+      x=x+2;
+    }
+    if (key== 'r') { //reset key
+      x = 285;
+      y=20;
+    }
   }
 }
