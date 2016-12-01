@@ -14,5 +14,14 @@ void draw() {
     top.pixels[i] = color(green(A)*1.2 - max(red(A), blue(A)));
   }
   top.updatePixels();
-  image(top, 0, 0);
+  image(top, 0, 0, 150,150);
+  
+  top.loadPixels();
+  for (int i=0; i<top.pixels.length; i++) {  
+    color A = top.pixels[i];
+    top.pixels[i] = color(1-green(A)*1.2 - max(red(A), blue(A)));
+  }
+  top.updatePixels();
+  image(top, 150, 0, 150,150);
+  
 }
