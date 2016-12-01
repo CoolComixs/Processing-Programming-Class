@@ -11,9 +11,7 @@ void draw() {
   top.loadPixels();
   for (int i=0; i<top.pixels.length; i++) {  
     color A = top.pixels[i];
-    color B = bottom.pixels[i];
     top.pixels[i] = color(green(A)*1.2 - max(red(A), blue(A)));
-    
   }
   top.updatePixels();
   image(top, 0, 0);
