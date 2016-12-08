@@ -1,4 +1,4 @@
-PImage toporig, top, top2, top3, top4, top5, bottom, bottom2;
+PImage toporig, top, top2, top3, top4, top5, bottom;
 void setup() {
   colorMode(RGB, 1.0);
   size(1200, 650);
@@ -34,7 +34,7 @@ void draw() {
   for (int i=0; i<top.pixels.length; i++) {  
     color A = top.pixels[i];
     color B = bottom.pixels[i];
-    top3.pixels[i] = color( red(A)*red(B), green(A)*green(B), blue(A)*blue(B));
+    top3.pixels[i] = color(red(A)*red(B), green(A)*green(B), blue(A)*blue(B));
   }
   top3.updatePixels();
   image(top3, 600, 0, 300,300);
