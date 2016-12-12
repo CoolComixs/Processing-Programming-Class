@@ -9,7 +9,6 @@ void setup() {
   top4 = loadImage("top.jpg");
   top5 = loadImage("top.jpg");
   bottom = loadImage("bottom.jpg");
-  bottom2 = loadImage("bottom.jpg");
   noLoop();
 }
 
