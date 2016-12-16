@@ -6,7 +6,7 @@ void setup() {
   }
 }
 void draw() {
-  background (0);
+  background (random(255), random(255),random(255));
   for (int i = 0; i<flake.length; i++) {
     flake[i].fall();
     flake[i].show();
@@ -37,11 +37,11 @@ class Flake {
     }
   }
     void show() {
-      //float col1 = random(0,255);
-      //float col2 = random(0,255);
-      //float col3 = random(0,255);
-      //stroke (col1,col2,col3);
-      //fill (col1,col2,col3);
+      float col1 = random(0,255);
+      float col2 = random(0,255);
+      float col3 = random(0,255);
+      stroke (col1,col2,col3);
+      fill (col1,col2,col3);
       ellipse (x, y, size, size);
     }
   }
