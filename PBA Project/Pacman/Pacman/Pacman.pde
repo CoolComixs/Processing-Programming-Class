@@ -59,18 +59,18 @@ void draw() {
     rect(x,y,10,10);
   }
 
-  //if (left!=0) { //start of wall collision checking
-  //  x=x+1;
-  //}
-  //if (right!=0) {
-  //  x=x-1;
-  //}
-  //if (up!=0) {
-  //  y=y-1;
-  //}
-  //if (down!=0) {
-  //  y=y+1;
-  //} //end of wall collision checking
+  if (left!=0) { //start of wall collision checking
+    x=x+1;
+  }
+  if (right!=0) {
+    x=x-1;
+  }
+  if (up!=0) {
+    y=y-1;
+  }
+  if (down!=0) {
+    y=y+1;
+  } //end of wall collision checking
 }
 
 class Food {
