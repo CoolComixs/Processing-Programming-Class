@@ -1,3 +1,8 @@
+//To do:
+//  reset after touching ghost
+//  point counter
+//  win screen after all is eaten
+
 float vert = 300, hor = 300; //vertical & horizontal vars
 float size = 20; // size var
 int food; // food var
