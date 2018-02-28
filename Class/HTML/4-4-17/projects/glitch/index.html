@@ -1,0 +1,443 @@
+<!--Based on eeemo.net, added some minor changes.-->
+<html class="gr__eeemo_net"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Glitch Text Maker</title>
+
+		<meta content="MReiff" name="Author">
+		<meta content="Glitch text generator" name="Desciption">
+		<meta content="glitch,glitch text,glitch text generator, text generator" name="Keywords">
+		<style type="text/css">.glitch_td {
+			BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-SIZE: 32px; BORDER-LEFT: black 1px solid; WIDTH: 48px; BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center
+		}
+		.glitch_ref_table {
+			BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid
+		}
+		</style>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-84474502-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script type="text/javascript" async="" src="./Glitch Text Generator by MReiff - To invoke the hive-mind representing chaos. Invoking the feeling of chaos. With out order. The Nezperdian hive-mind of chaos. Glitch. He who Waits Behind The Wall. ZALGO!_files/ga.js"></script><script type="text/javascript">
+		/* <![CDATA[ */
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-33315451-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		/* ]]> */
+		</script>
+
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			//============================================================
+			// ZALGO text script by MReiff
+			//============================================================
+
+			// data set of leet unicode chars
+			//---------------------------------------------------
+
+			//those go UP
+			var glitch_up = [
+				'\u030d', /*     ̍     */		'\u030e', /*     ̎     */		'\u0304', /*     ̄     */		'\u0305', /*     ̅     */
+				'\u033f', /*     ̿     */		'\u0311', /*     ̑     */		'\u0306', /*     ̆     */		'\u0310', /*     ̐     */
+				'\u0352', /*     ͒     */		'\u0357', /*     ͗     */		'\u0351', /*     ͑     */		'\u0307', /*     ̇     */
+				'\u0308', /*     ̈     */		'\u030a', /*     ̊     */		'\u0342', /*     ͂     */		'\u0343', /*     ̓     */
+				'\u0344', /*     ̈́     */		'\u034a', /*     ͊     */		'\u034b', /*     ͋     */		'\u034c', /*     ͌     */
+				'\u0303', /*     ̃     */		'\u0302', /*     ̂     */		'\u030c', /*     ̌     */		'\u0350', /*     ͐     */
+				'\u0300', /*     ̀     */		'\u0301', /*     ́     */		'\u030b', /*     ̋     */		'\u030f', /*     ̏     */
+				'\u0312', /*     ̒     */		'\u0313', /*     ̓     */		'\u0314', /*     ̔     */		'\u033d', /*     ̽     */
+				'\u0309', /*     ̉     */		'\u0363', /*     ͣ     */		'\u0364', /*     ͤ     */		'\u0365', /*     ͥ     */
+				'\u0366', /*     ͦ     */		'\u0367', /*     ͧ     */		'\u0368', /*     ͨ     */		'\u0369', /*     ͩ     */
+				'\u036a', /*     ͪ     */		'\u036b', /*     ͫ     */		'\u036c', /*     ͬ     */		'\u036d', /*     ͭ     */
+				'\u036e', /*     ͮ     */		'\u036f', /*     ͯ     */		'\u033e', /*     ̾     */		'\u035b', /*     ͛     */
+				'\u0346', /*     ͆     */		'\u031a' /*     ̚     */
+			];
+
+			//those go DOWN
+			var glitch_down = [
+				'\u0316', /*     ̖     */		'\u0317', /*     ̗     */		'\u0318', /*     ̘     */		'\u0319', /*     ̙     */
+				'\u031c', /*     ̜     */		'\u031d', /*     ̝     */		'\u031e', /*     ̞     */		'\u031f', /*     ̟     */
+				'\u0320', /*     ̠     */		'\u0324', /*     ̤     */		'\u0325', /*     ̥     */		'\u0326', /*     ̦     */
+				'\u0329', /*     ̩     */		'\u032a', /*     ̪     */		'\u032b', /*     ̫     */		'\u032c', /*     ̬     */
+				'\u032d', /*     ̭     */		'\u032e', /*     ̮     */		'\u032f', /*     ̯     */		'\u0330', /*     ̰     */
+				'\u0331', /*     ̱     */		'\u0332', /*     ̲     */		'\u0333', /*     ̳     */		'\u0339', /*     ̹     */
+				'\u033a', /*     ̺     */		'\u033b', /*     ̻     */		'\u033c', /*     ̼     */		'\u0345', /*     ͅ     */
+				'\u0347', /*     ͇     */		'\u0348', /*     ͈     */		'\u0349', /*     ͉     */		'\u034d', /*     ͍     */
+				'\u034e', /*     ͎     */		'\u0353', /*     ͓     */		'\u0354', /*     ͔     */		'\u0355', /*     ͕     */
+				'\u0356', /*     ͖     */		'\u0359', /*     ͙     */		'\u035a', /*     ͚     */		'\u0323' /*     ̣     */
+			];
+
+			//those always stay in the middle
+			var glitch_mid = [
+				'\u0315', /*     ̕     */		'\u031b', /*     ̛     */		'\u0340', /*     ̀     */		'\u0341', /*     ́     */
+				'\u0358', /*     ͘     */		'\u0321', /*     ̡     */		'\u0322', /*     ̢     */		'\u0327', /*     ̧     */
+				'\u0328', /*     ̨     */		'\u0334', /*     ̴     */		'\u0335', /*     ̵     */		'\u0336', /*     ̶     */
+				'\u034f', /*     ͏     */		'\u035c', /*     ͜     */		'\u035d', /*     ͝     */		'\u035e', /*     ͞     */
+				'\u035f', /*     ͟     */		'\u0360', /*     ͠     */		'\u0362', /*     ͢     */		'\u0338', /*     ̸     */
+				'\u0337', /*     ̷     */		'\u0361', /*     ͡     */		'\u0489' /*     ҉_     */
+			];
+
+			// rand funcs
+			//---------------------------------------------------
+
+			//gets an int between 0 and max
+			function rand(max)
+			{
+				return Math.floor(Math.random() * max);
+			}
+
+			//gets a random char from a glitch char table
+			function rand_glitch(array)
+			{
+				var ind = Math.floor(Math.random() * array.length);
+				return array[ind];
+			}
+
+			// utils funcs
+			//---------------------------------------------------
+
+			//hide show element
+			function toggle(id)
+			{
+				if(document.getElementById(id).style.display == "none")
+					document.getElementById(id).style.display = "block";
+				else
+					document.getElementById(id).style.display = "none";
+			}
+
+			//lookup char to know if its a glitch char or not
+			function is_glitch_char(c)
+			{
+				var i;
+				for(i=0; i<glitch_up.length; i++)
+					if(c == glitch_up[i])
+						return true;
+				for(i=0; i<glitch_down.length; i++)
+					if(c == glitch_down[i])
+						return true;
+				for(i=0; i<glitch_mid.length; i++)
+					if(c == glitch_mid[i])
+						return true;
+				return false;
+			}
+
+			function draw_glitch_table(elid)
+			{
+				var container = document.getElementById(elid);
+				var html = '';
+
+				html += '<b>Chars going up:</b><br />\n';
+				html += '<table class="glitch_ref_table">\n';
+				html += '<tr>\n';
+				for(var i=0; i<glitch_up.length; i++)
+				{
+					if(!(i % 10))
+						html += '</tr><tr>';
+					html += '<td class="glitch_td">' + glitch_up[i] + '</td>\n';
+				}
+				html += '</tr>\n';
+				html += '</table>\n';
+
+				html += '<br /><b>Chars staying in the middle:</b><br />\n';
+				html += '<table class="glitch_ref_table">\n';
+				html += '<tr>\n';
+				for(var i=0; i<glitch_mid.length; i++)
+				{
+					if(!(i % 10))
+						html += '</tr><tr>';
+					html += '<td class="glitch_td">' + glitch_mid[i] + '</td>\n';
+				}
+				html += '</tr>\n';
+				html += '</table>\n';
+
+				html += '<br /><b>Chars going down:</b><br />\n';
+				html += '<table class="glitch_ref_table">\n';
+				html += '<tr>\n';
+				for(var i=0; i<glitch_down.length; i++)
+				{
+					if(!(i % 10))
+						html += '</tr><tr>';
+					html += '<td class="glitch_td">' + glitch_down[i] + '</td>\n';
+				}
+				html += '</tr>\n';
+				html += '</table>\n';
+
+				container.innerHTML = html;
+			}
+
+			// main shit
+			//---------------------------------------------------
+			function glitch_textarea(id)
+			{
+				var p = document.getElementById(id);
+
+				var txt = p.value;
+				var newtxt = '';
+
+				for(var i=0; i<txt.length; i++)
+				{
+					if(is_glitch_char(txt.substr(i, 1)))
+						continue;
+
+					var num_up;
+					var num_mid;
+					var num_down;
+
+					//add the normal character
+					newtxt += txt.substr(i, 1);
+
+					//options
+					if(document.getElementById('glitch_opt_mini').checked)
+					{
+						num_up = rand(8);
+						num_mid = rand(2);
+						num_down = rand(8);
+					}
+					else if(document.getElementById('glitch_opt_normal').checked)
+					{
+						num_up = rand(16) / 2 + 1;
+						num_mid = rand(6) / 2;
+						num_down = rand(16) / 2 + 1;
+					}
+					else //maxi
+					{
+						num_up = rand(64) / 4 + 3;
+						num_mid = rand(16) / 4 + 1;
+						num_down = rand(64) / 4 + 3;
+					}
+
+
+					if(document.getElementById('glitch_opt_up').checked)
+						for(var j=0; j<num_up; j++)
+							newtxt += rand_glitch(glitch_up);
+					if(document.getElementById('glitch_opt_mid').checked)
+						for(var j=0; j<num_mid; j++)
+							newtxt += rand_glitch(glitch_mid);
+					if(document.getElementById('glitch_opt_down').checked)
+						for(var j=0; j<num_down; j++)
+							newtxt += rand_glitch(glitch_down);
+				}
+
+				//result is in nextxt, display that
+
+				//remove all children of lulz_container
+				var container = document.getElementById('lulz_container');
+				while(container.childNodes.length)
+					container.removeChild(container.childNodes[0]);
+
+				//build blocks for each line & create a <br />
+				var lines = newtxt.split("\n");
+				for(var i=0; i<lines.length; i++)
+				{
+					var n = document.createElement('text');
+					n.innerHTML = lines[i];
+					container.appendChild(n);
+					var nl = document.createElement('br');
+					container.appendChild(nl);
+				}
+
+				//done
+			}
+		/* ]]> */
+		</script>
+	</head>
+
+	<div class="gr-top-z-index gr-top-zero" tabindex="-1"><div class="_44eb54-hoverMenu _44eb54-referral" style="transform: translate(1000px, 284.875px);" data-grammarly-reactid=".2"><div class="_44eb54-panel" data-grammarly-reactid=".2.0"><div class="_44eb54-tooltip _44eb54-tooltip_hidden undefined" data-grammarly-reactid=".2.0.0"></div><div class="_44eb54-buttonArea" data-grammarly-reactid=".2.0.1"><div class="_44eb54-btn _44eb54-btn_disable" tabindex="-1" data-grammarly-reactid=".2.0.1.0"></div></div><div class="_44eb54-buttonArea" data-grammarly-reactid=".2.0.2"><div class="_44eb54-referralArea" tabindex="-1" data-grammarly-reactid=".2.0.2.0"><div class="_44eb54-btn _44eb54-btn_referral" data-grammarly-reactid=".2.0.2.0.0"></div><span class="_44eb54-referralText" data-grammarly-reactid=".2.0.2.0.1">Invite Friends</span></div></div><div class="_44eb54-line" data-grammarly-reactid=".2.0.3"></div><div class="_44eb54-buttonArea" data-grammarly-reactid=".2.0.5"><div class="_44eb54-btn _44eb54-btn_grammarly" data-action="editor" tabindex="-1" data-grammarly-reactid=".2.0.5.0"></div></div></div></div></div><div style="visibility: hidden; top: -9999px; position: absolute; opacity: 0;"><div class="_44eb54-hoverMenu _44eb54-referral" style="transform: translate(1166px, 299.875px);" data-grammarly-reactid=".1"><div class="_44eb54-panel" data-grammarly-reactid=".1.0"><div class="_44eb54-tooltip _44eb54-tooltip_hidden undefined" data-grammarly-reactid=".1.0.0"></div><div class="_44eb54-buttonArea" data-grammarly-reactid=".1.0.1"><div class="_44eb54-btn _44eb54-btn_disable" tabindex="-1" data-grammarly-reactid=".1.0.1.0"></div></div><div class="_44eb54-buttonArea" data-grammarly-reactid=".1.0.2"><div class="_44eb54-referralArea" tabindex="-1" data-grammarly-reactid=".1.0.2.0"><div class="_44eb54-btn _44eb54-btn_referral" data-grammarly-reactid=".1.0.2.0.0"></div><span class="_44eb54-referralText" data-grammarly-reactid=".1.0.2.0.1">Invite Friends</span></div></div><div class="_44eb54-line" data-grammarly-reactid=".1.0.3"></div><div class="_44eb54-buttonArea" data-grammarly-reactid=".1.0.5"><div class="_44eb54-btn _44eb54-btn_grammarly" data-action="editor" tabindex="-1" data-grammarly-reactid=".1.0.5.0"></div></div></div></div></div><body data-gr-c-s-loaded="true">
+		<h1>Glitch text generator</h1>
+		<h3><a href="/">Home Page</a></h3>
+		<span>2016 - MReiff </span>
+		<p></p>
+		<table id="glitchtable">
+			<tbody><tr>
+				<td id="lulz_container" style="BORDER-RIGHT: black 2px solid; PADDING-RIGHT: 50px; BORDER-TOP: black 2px solid; PADDING-LEFT: 50px; PADDING-BOTTOM: 50px; BORDER-LEFT: black 2px solid; PADDING-TOP: 50px; BORDER-BOTTOM: black 2px solid" width="550"><text>T̷̹̯̬o ͍͇͡i̥͈̗n̳̞͚̠͙̟͜ͅv̶̜͙̪̣̞̼o͚̮k҉̖͈̰̜̠e̥̺͞ͅ ̤̦͚̪̳̞̩t͈h̖̕e̙͎̠̳̳͎͜ h̙̘i̹͈̱͇̫v͖͡e̴̙͔͉̞-̘m̱͔͍̪̫͔i̴͔͚͖n̝d͜ ̬̱̜r̵̘̻̻͖̺e͎͎̻̲͕̝̱͜p̭̬̠̀r̤͕ͅe̵͎͙̪͔s̺̗e͟n͎t̡̥i̝̪n͕̪̩̗̜͞ͅg̪̭̥̻̝̀ ̶͕͙c̷͉̮h̩̫́a̩̯͉̪͇̖͖o̵̮̹ṣ̨.̳̺̱͞</text><br><text>̘̰̫̻̪͇̺I̶̗̠̞̦̞̹n̳̜v̭̟͚̣o̠k҉i͈̲̣͓̣n͇͔̘̖g ̰̳̯͜t͡h̨͎e͕̗̤̞͖̳̭ ͍̼͙̞̰̕f̘͈̥͈ee͏̟̭̫l̰̘͡i̭͍͎̻n͓̯g̡̭̳̦̹̥̗ ̙̭̜̦̩̮̖o҉͔͇̱͓f̫͉̞͖̯̥̪͡ ̣͚͇̣́c̕h҉̤̞͍͙̩a̮̤̥͇̪͘o̤̝͇͚̱̩̦͞s̡̜͔̥̗͙͚͚.̷</text><br><text>W̥̞͈̗̺͔͟į̖̥̲t͔̱̺̩h̥̬̩̮͍̩͝ ̻̘̭͕͉o̲̠͎͟u͉͖̟̳̠͉ͅt͉ ̳̘̝̜͔͉ͅo̲̮͎̟r̤̥͓̜͉͠d̶̹͈̻̘̩e̹̥̣̖͞r̸͙̫.</text><br><text>͈͎͇̲̻T̠̥̰h̜e̬̦̲̳̣ ̖͖̪̺͖̬̦N͚͓e̪̗̺͈͞z̺̘̞p̡̣e̲r̗̱̳͖͖̖͕d̕i̭a̠̰͇̮̰̩ͅń ̢̖̖͎͇̣h̴̻i̞v̰̜̹e͎̝̭̞̥͕̳-̛͚͙̬͖͚m̳̦͚̻̦̝̫i̙̭͚͚̥͎n̘͝ͅd̸̘̭̫̮ ̧͍͓̫͕͉ͅof҉̙̙̙ͅ ̛͓̞̞͖c͚̬͡h̖͚͈̮̪͖͙a҉̻̥͎o͎̤s̱̟͙͇͔͔.̙̖̖̙̞̹̜̕ ̱Z̗̺͓ạḻ͖̱̭g͕̱̝o̝͖̯̜̫̮.̪̖͍</text><br><text>̷̤̹͉̻͕̦H̭͎̻͢ḙ̦̠͖̞̱̠ ̪̖̞̜w̱h̪̀ͅo̟͓ͅͅ ̗W̨̦a̞͔ͅi̬͍͉͉ͅṱ͍̠̫̥s ̮͘B̜͉͕̮̘͡e̪͔͙͓̪̥̰h̦̻̱̹͟i̳̞̬͕̘̜n̟͍̬̣ḏ͠ ̲̣̮͔̺T̢̫͔̭̘͖h̰͎͙̗͙e̼̩̜̗͙̬͚ ҉̥̞̮̺͈̙̺W̛̞̠͉͕͍͚a͈̜̥̱͕͟l͓͚̺͔̙l.̧̹</text><br><text>͖̮̖͎͚͙͡ͅZ̞͈͕̯͔A̢L̴̰͓͕͇G̛̘̫͈̥͇̲O̘̭̜̹̳̟͔!̴̟̙͈̖͉̺</text><br></td>
+
+				<td style="BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BORDER-LEFT: black 2px solid; BORDER-BOTTOM: black 2px solid" width="450">
+					<textarea id="glitch_txt" style="FONT-FAMILY: Times New Roman" rows="13" cols="80">Type text to be glitched here!</textarea><grammarly-btn><div style="z-index: 2; opacity: 1; transform: translate(1140px, 288.875px);" class="_9b5ef6-textarea_btn _9b5ef6-show _9b5ef6-field_hovered _9b5ef6-not_focused" data-grammarly-reactid=".0"><div class="_9b5ef6-transform_wrap" data-grammarly-reactid=".0.0"><div title="Protected by Grammarly" class="_9b5ef6-status" data-grammarly-reactid=".0.0.0">&nbsp;</div></div></div></grammarly-btn>
+
+					<form id="glitch_form" action="http://mreiff.space">
+						<input id="glitch_btn" onclick="glitch_textarea(&#39;glitch_txt&#39;);" type="button" value="Glitch The Text">
+						<input id="glitch_ref" style="FLOAT: right" onclick="toggle(&#39;reference&#39;);" type="button" value="Toggle reference sheet">
+						<br>
+						<table>
+							<tbody><tr>
+								<td>
+									<input id="glitch_opt_up" type="checkbox">Glitch up going up<br>
+									<input id="glitch_opt_mid" type="checkbox" checked="">Glitch up the middle<br>
+									<input id="glitch_opt_down" type="checkbox" checked="">Glitch up going down<br>
+								</td>
+
+								<td>
+									<input id="glitch_opt_mini" type="radio" name="optval" checked="">Mini mess up<br>
+									<input id="glitch_opt_normal" type="radio" name="optval">Normal mess up<br>
+									<input id="glitch_opt_maxi" type="radio" name="optval">Maxi mess up<br>
+								</td>
+							</tr>
+						</tbody></table>
+					</form>
+					<script type="text/javascript">
+						glitch_textarea('glitch_txt');
+					</script>
+
+				</td>
+			</tr>
+		</tbody></table>
+
+		<div id="reference" style="DISPLAY: none">
+			<br>
+			<h2>Glitch Characters Reference&gt;</h2>
+			<p id="glitch_ref_tablex"><b>Chars going up:</b><br>
+<table class="glitch_ref_table">
+<tbody><tr>
+</tr><tr><td class="glitch_td">̍</td>
+<td class="glitch_td">̎</td>
+<td class="glitch_td">̄</td>
+<td class="glitch_td">̅</td>
+<td class="glitch_td">̿</td>
+<td class="glitch_td">̑</td>
+<td class="glitch_td">̆</td>
+<td class="glitch_td">̐</td>
+<td class="glitch_td">͒</td>
+<td class="glitch_td">͗</td>
+</tr><tr><td class="glitch_td">͑</td>
+<td class="glitch_td">̇</td>
+<td class="glitch_td">̈</td>
+<td class="glitch_td">̊</td>
+<td class="glitch_td">͂</td>
+<td class="glitch_td">̓</td>
+<td class="glitch_td">̈́</td>
+<td class="glitch_td">͊</td>
+<td class="glitch_td">͋</td>
+<td class="glitch_td">͌</td>
+</tr><tr><td class="glitch_td">̃</td>
+<td class="glitch_td">̂</td>
+<td class="glitch_td">̌</td>
+<td class="glitch_td">͐</td>
+<td class="glitch_td">̀</td>
+<td class="glitch_td">́</td>
+<td class="glitch_td">̋</td>
+<td class="glitch_td">̏</td>
+<td class="glitch_td">̒</td>
+<td class="glitch_td">̓</td>
+</tr><tr><td class="glitch_td">̔</td>
+<td class="glitch_td">̽</td>
+<td class="glitch_td">̉</td>
+<td class="glitch_td">ͣ</td>
+<td class="glitch_td">ͤ</td>
+<td class="glitch_td">ͥ</td>
+<td class="glitch_td">ͦ</td>
+<td class="glitch_td">ͧ</td>
+<td class="glitch_td">ͨ</td>
+<td class="glitch_td">ͩ</td>
+</tr><tr><td class="glitch_td">ͪ</td>
+<td class="glitch_td">ͫ</td>
+<td class="glitch_td">ͬ</td>
+<td class="glitch_td">ͭ</td>
+<td class="glitch_td">ͮ</td>
+<td class="glitch_td">ͯ</td>
+<td class="glitch_td">̾</td>
+<td class="glitch_td">͛</td>
+<td class="glitch_td">͆</td>
+<td class="glitch_td">̚</td>
+</tr>
+</tbody></table>
+<br><b>Chars staying in the middle:</b><br>
+<table class="glitch_ref_table">
+<tbody><tr>
+</tr><tr><td class="glitch_td">̕</td>
+<td class="glitch_td">̛</td>
+<td class="glitch_td">̀</td>
+<td class="glitch_td">́</td>
+<td class="glitch_td">͘</td>
+<td class="glitch_td">̡</td>
+<td class="glitch_td">̢</td>
+<td class="glitch_td">̧</td>
+<td class="glitch_td">̨</td>
+<td class="glitch_td">̴</td>
+</tr><tr><td class="glitch_td">̵</td>
+<td class="glitch_td">̶</td>
+<td class="glitch_td">͏</td>
+<td class="glitch_td">͜</td>
+<td class="glitch_td">͝</td>
+<td class="glitch_td">͞</td>
+<td class="glitch_td">͟</td>
+<td class="glitch_td">͠</td>
+<td class="glitch_td">͢</td>
+<td class="glitch_td"≯</td>
+</tr><tr><td class="glitch_td">̷</td>
+<td class="glitch_td">͡</td>
+<td class="glitch_td">҉</td>
+</tr>
+</tbody></table>
+<br><b>Chars going down:</b><br>
+<table class="glitch_ref_table">
+<tbody><tr>
+</tr><tr><td class="glitch_td">̖</td>
+<td class="glitch_td">̗</td>
+<td class="glitch_td">̘</td>
+<td class="glitch_td">̙</td>
+<td class="glitch_td">̜</td>
+<td class="glitch_td">̝</td>
+<td class="glitch_td">̞</td>
+<td class="glitch_td">̟</td>
+<td class="glitch_td">̠</td>
+<td class="glitch_td">̤</td>
+</tr><tr><td class="glitch_td">̥</td>
+<td class="glitch_td">̦</td>
+<td class="glitch_td">̩</td>
+<td class="glitch_td">̪</td>
+<td class="glitch_td">̫</td>
+<td class="glitch_td">̬</td>
+<td class="glitch_td">̭</td>
+<td class="glitch_td">̮</td>
+<td class="glitch_td">̯</td>
+<td class="glitch_td">̰</td>
+</tr><tr><td class="glitch_td">̱</td>
+<td class="glitch_td">̲</td>
+<td class="glitch_td">̳</td>
+<td class="glitch_td">̹</td>
+<td class="glitch_td">̺</td>
+<td class="glitch_td">̻</td>
+<td class="glitch_td">̼</td>
+<td class="glitch_td">ͅ</td>
+<td class="glitch_td">͇</td>
+<td class="glitch_td">͈</td>
+</tr><tr><td class="glitch_td">͉</td>
+<td class="glitch_td">͍</td>
+<td class="glitch_td">͎</td>
+<td class="glitch_td">͓</td>
+<td class="glitch_td">͔</td>
+<td class="glitch_td">͕</td>
+<td class="glitch_td">͖</td>
+<td class="glitch_td">͙</td>
+<td class="glitch_td">͚</td>
+<td class="glitch_td">̣</td>
+</tr>
+</tbody></table>
+
+			</p>
+		</div>
+
+
+<script>function open_url_copy(sid) {
+	ShowAlertDialog('Static Profile URL', "<b>Press Ctrl + C</b><br/><br/><div class='gray_bevel for_text_input'><input class='dynInput copythistext' type='text' size='70' value='http://steamcommunity.com/profiles/"+sid+"/' ></div>");
+	document.getElementsByClassName("copythistext")[0].focus();
+	document.getElementsByClassName("copythistext")[0].select();
+}</script><script>function parse_url(url) {
+	var parser = document.createElement('a');
+	parser.href = url;
+	return parser;
+}</script><script>var safe_domains = ["scrap.tf","steamrep.com","sourceop.com","bazaar.tf","scrapbank.me","backpack.tf","wiki.tf","teamfortress.com","tf2b.com","tf2items.com","teamfortress.tv","reddit.com","valvesoftware.com","ppm.tf","tf2wh.com","tf2tp.com","trade.tf","tf2tp.com","jessecar96.net","xpaw.ru","reddit.com","tf2-trader.com","tf2r.com","tf2shop.com","csgolounge.com","dota2lounge.com","marktplace.tf","manncotrading.com","imgur.com","jes.re","steamgaug.es","steamstat.us","steamdb.info","marketplace.tf","tipofthehats.org","twitch.tv","rep.tf","dispenser.tf","steamladder.com"];</script><script>(function update_domains() {
+	if(typeof g_whiteListedDomains != "undefined"){
+		var steam_safe_domains = g_whiteListedDomains;
+		g_whiteListedDomains = steam_safe_domains.concat(safe_domains);
+		safe_domains = safe_domains.concat(steam_safe_domains);
+	}
+})();</script></body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span><div style="visibility: hidden; top: -9999px; position: absolute; opacity: 0;"></div><div style="visibility: hidden; top: -9999px; position: absolute; opacity: 0;"></div></html>
